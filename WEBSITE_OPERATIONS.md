@@ -20,9 +20,9 @@ The owner can request website edits in the ChatGPT conversation with a connected
 4. Verify mobile and desktop layouts and public navigation. Preserve SEO metadata and existing working links.
 5. Explain clearly which changes were actually deployed and which still require Azure Portal or DNS-provider access.
 
-## Publishing connection: needs a one-time GitHub check
+## Publishing connection: GitHub Actions enabled, deployment verification pending
 
-As of 10 November 2026, the GitHub Actions API reports **zero workflow runs** for this repository, including after commits to `main`. The deploy workflow exists and has been updated for a plain HTML site, but a successful Azure deployment from this repository has **not yet been confirmed**. Do not tell the owner that Sacred Pathways edits are live until this is resolved.
+On 10 November 2026, the owner enabled Actions on this forked repository in the GitHub Actions tab. A controlled documentation-only commit was used to test the workflow. **Check the actual run result and Azure publication before declaring the deployment verified.**
 
 Owner/admin action to inspect if it remains at zero: open `https://github.com/yuliyaschreib-collab/thesacredpathways/settings/actions` and verify that GitHub Actions are enabled for the repository. Then check `https://github.com/yuliyaschreib-collab/thesacredpathways/actions` for runs. If the settings allow Actions but no runs appear, investigate account/organisation restrictions and whether the linked Azure Static Web App deployment secret is configured. Do not paste tokens into chat or source files.
 
