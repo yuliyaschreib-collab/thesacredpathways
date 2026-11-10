@@ -35,6 +35,9 @@ Owner/admin action to inspect if it remains at zero: open `https://github.com/yu
 
 ## Domain and DNS
 
+**Authoritative DNS location supplied by owner (10 November 2026):** Azure tenant `schreibsecondary.onmicrosoft.com`, subscription `6e057eb9-5a68-43d3-a168-f7d205100f6c`, resource group `thesacredpathways.net`, Azure DNS zone `thesacredpathways.net`. [Open record sets in Azure](https://portal.azure.com/#@schreibsecondary.onmicrosoft.com/resource/subscriptions/6e057eb9-5a68-43d3-a168-f7d205100f6c/resourceGroups/thesacredpathways.net/providers/Microsoft.Network/dnszones/thesacredpathways.net/recordsets). A `guru` CNAME should point to `lively-meadow-07fcd1c0f.3.azurestaticapps.net`. **Record creation/validation not yet confirmed.** Do not change parent domain nameservers, apex records or email records.
+
+
 A website's *hosting* (Azure) and the domain's *authoritative DNS provider* may be separate. Never assume the DNS is in GitHub or Azure. Confirm the authoritative provider before editing DNS. Do not replace existing A, MX, TXT, or NS records. Do not switch the parent domain's nameservers while adding a `guru` subdomain.
 
 ## Separate private archive
